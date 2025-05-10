@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock LIst</title>
+</head>
+<h1> Stock Item List </h1>
+<body>
+    {% for stock in stock %}
+    <p><b>Item Code: {{stock.item_code}}</b></p>
+    <p>Description: {{stock.description}}</p>
+    <p>unit cost: {{stock.unit_cost}}</p>
+    <p>quantity in stock: {{stock.quantity_in_stock}}</p>
+    <p>Re order level : {{stock.reorder_level}}</p>
+    {% endfor %}
+   
+</body>
+</html>
